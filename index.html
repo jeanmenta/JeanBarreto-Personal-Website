@@ -1,6 +1,94 @@
+<!DOCTYPE html>
 <html>
-    <div>
-        Jean's Porfolio Website
-        <img src="./IMG_6823 2.png">
-    </div>
+<head>
+  <title>My Personal Webpage</title>
+  <style>
+  /* List */
+ul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 700px;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+/* List element */
+li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+ 
+<h1 style="color: white;">Create a personal web page in GitHub</h1>
+
+  <ul>
+    <li>Sign up for a GitHub account if you don't already have one.</li>
+    <li>Create a new repository on GitHub by clicking on the "+" button in the top right corner of the homepage and selecting "New repository". Give the repository a name (e.g. "my-website") and make sure it is set to public.
+    </li>
+    <li>In the repository, go to the "Settings" tab. Scroll down to the "GitHub Pages" section and select the branch you would like to use for GitHub Pages (usually "master").</li>
+    <li>Now that your repository is set up for GitHub Pages, you can start adding files to it. The easiest way to do this is to create a new file called "index.html" in the root of your repository. This file will be the starting point for your website.</li>
+    <li>Write the HTML, CSS and JavaScript code for your webpage and save it into the index.html file. If you're unsure of how to do this, you can find many tutorials online that will walk you through the basics of web development.</li>
+    <li>Commit the changes to the repository by clicking on the "Commit Changes" button at the bottom of the page.</li>
+    <li>Your website should now be live at a URL like https://username.github.io/my-website (replace "username" with your GitHub username and "my-website" with the name of your repository).</li>
+    <li>You can also customize the domain name of your website (e.g. www.example.com) and link it to your GitHub page.</li>
+    <li>Finally, you can continue to make updates to your website by editing the files in your repository and committing the changes.</li>
+
+   
+  </ul>
+
+</body>
 </html>
