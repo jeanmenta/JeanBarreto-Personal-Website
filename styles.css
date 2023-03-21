@@ -34,11 +34,7 @@ body {
     z-index: 900;
 }
 
-.footer {
-    background: rgba(21, 21, 22, 255);
-    padding-left: 19%;
 
-}
 
 .navbar-brand {
     color: var(--white)
