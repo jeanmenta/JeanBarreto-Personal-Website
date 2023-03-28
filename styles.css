@@ -1,3 +1,6 @@
+/* Bootstrap CSS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+
 :root {
     --white: #e2e2e4;
     --lightgray: #313131;
@@ -7,7 +10,6 @@
 body {
     background: black;
     font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
-
 }
 
 .fs-18 {
@@ -22,26 +24,14 @@ body {
 
 .navbar {
     position: fixed;
-    padding-left: 20%;
-    padding-right: 20%;
     top: 0px;
     background: rgba(21, 21, 22, 0.3);
     backdrop-filter: blur(9.6px);
     -webkit-backdrop-filter: blur(9.6px);
-    width: 100vw;
+    width: 100% !important;
     border-bottom: 1px solid var(--lightgray);
-    height: 50px;
-    z-index: 900;
-}
-
-
-
-.navbar-brand {
-    color: var(--white)
-}
-
-.navbar-brand:hover {
-    color: var(--white) !important
+    height: 55px;
+    z-index: 1000;
 }
 
 .nav-link {
@@ -53,29 +43,11 @@ body {
     color: var(--blue)
 }
 
-.embed-responsive {
-    width: 70%;
-    height: 55vh
-}
-
-.video {
-    width: 60%
-}
-
-.projects {
-    width: 60%;
-}
-
 .embed-responsive-item {
     width: 100%;
     height: 55vh;
     border-radius: 10px;
     border: 1px solid var(--lightgray);
-}
-
-.bio {
-    color: var(--white);
-    width: 60%;
 }
 
 .card {
@@ -90,10 +62,25 @@ body {
     text-decoration: underline;
 }
 
-
 .card-title {
     color: white;
     text-decoration: none !important;
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 772px) {
+    .card-img {
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .fs-18 {
+        font-size: 15px;
+    }
 }
 
 .card-body {
@@ -101,8 +88,7 @@ body {
     color: var(--white);
     padding-bottom: 2px;
     border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-
+    border-bottom-right-radius: 10px;
 }
 
 .list {
@@ -113,7 +99,6 @@ body {
 
 .list li {
     margin-bottom: 10px;
-
 }
 
 .list li a {
@@ -126,28 +111,10 @@ body {
 
 .list li a:hover {
     text-decoration: underline;
-    
 }
-
 
 .list li a span {
     margin-left: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-.eyes {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
 }
 
 .eye {
@@ -159,7 +126,6 @@ body {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-
 }
 
 .ball {
@@ -171,4 +137,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+@media (min-width: 1000px) {
+    .pacman-padding {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 15px
+    }
 }
