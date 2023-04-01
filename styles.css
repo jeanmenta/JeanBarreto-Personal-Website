@@ -4,7 +4,7 @@
 :root {
     --white: #e2e2e4;
     --lightgray: #313131;
-    --blue: #217bd0
+    --blue: #217bd0;
 }
 
 body {
@@ -22,9 +22,21 @@ body {
     font-weight: 600;
 }
 
+.gray {
+    color: gray !important;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.h-400 {
+    height: 400px !important;
+}
+
 .navbar {
     position: fixed;
-    top: 0px;
+    top: 0;
     background: rgba(21, 21, 22, 0.3);
     backdrop-filter: blur(9.6px);
     -webkit-backdrop-filter: blur(9.6px);
@@ -40,7 +52,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--blue)
+    color: var(--blue);
 }
 
 .embed-responsive-item {
@@ -53,9 +65,8 @@ body {
 .card {
     background-color: black;
     border: 1px solid var(--lightgray);
-    text-decoration: none;
     border-radius: 10px;
-    min-width: 200px
+    min-width: 200px;
 }
 
 .project-card:hover .list li a {
@@ -72,17 +83,6 @@ body {
     height: auto;
 }
 
-@media (max-width: 772px) {
-    .card-img {
-        max-height: 300px;
-        object-fit: contain;
-    }
-
-    .fs-18 {
-        font-size: 15px;
-    }
-}
-
 .card-body {
     background-color: #1d1d1f;
     color: var(--white);
@@ -93,8 +93,8 @@ body {
 
 .list {
     list-style: none;
-    padding-left: 0px;
-    margin-bottom: 0px;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .list li {
@@ -104,7 +104,6 @@ body {
 .list li a {
     text-decoration: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
     color: var(--blue);
 }
@@ -147,6 +146,13 @@ body {
 
 @media (max-width: 991px) {
     .navbar-nav {
-        gap: 15px
+        gap: 15px;
+    }
+}
+
+@media (max-width: 772px) {
+    .card-img {
+        max-height: 300px;
+        object-fit: contain;
     }
 }
