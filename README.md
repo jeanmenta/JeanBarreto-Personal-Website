@@ -13,16 +13,15 @@ The portfolio website is hosted on GitHub Pages and can be accessed at the follo
 ## Features
 - Responsive design for optimal viewing on various devices.
 - Interactive eye movement animation in the projects section.
-- Equal height cards in the projects section.
 - Social media icons with links to Jean's LinkedIn, GitHub, and Email.
 - Navbar with smooth scrolling to different sections of the website.
-- Embedded YouTube video showcasing one of Jean's projects.
+- Embedded YouTube video showcasing Jean's experiences.
 - Distinct sections for bio, video, and projects to provide a clear structure and easy navigation.
 - Visually appealing design, incorporating a modern color palette and typography.
 - Bootstrap framework for a consistent and mobile-friendly layout.
+- Bootstrap Grid layout.
 - Custom CSS styles for unique design elements and animations.
 - JavaScript for interactive features and improved user experience.
-- Use of event listeners for efficient handling of user interactions.
 
 ## Roadmap of future improvements
 - Add more projects and update the existing ones.
