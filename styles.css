@@ -73,6 +73,10 @@ body {
     text-decoration: underline;
 }
 
+.project-card-noinfo:hover .list li a {
+    text-decoration: underline;
+}
+
 .card-title {
     color: white;
     text-decoration: none !important;
@@ -138,10 +142,14 @@ body {
     border-radius: 50%;
 }
 
-@media (min-width: 1000px) {
-    .pacman-padding {
-        padding: 25px;
-    }
+.pacman-image {
+    max-width: 280px;
+    height: auto
+}
+
+.bus-image {
+    width: 350px;
+    height: auto
 }
 
 @media (max-width: 991px) {
